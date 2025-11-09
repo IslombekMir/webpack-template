@@ -1,0 +1,9 @@
+The dev server is availabel at http://localhost:8080
+
+Deploying dist steps:
+1. git status and make sure changes are commited
+2. git checkout gh-pages && git merge main --no-edit
+3. npx webpack
+4. git add dist -f && git commit -m "Deployment commit"
+5. git subtree push --prefix dist origin gh-pages -> deploy
+6. git checkout main
